@@ -1,0 +1,1 @@
+C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chrome.exe --disable-web-security --user-data-dir=C:\MyChromeDevUserDsata
