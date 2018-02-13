@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>计算属性</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.1.3/vue.js"></script>
+</head>
+<body>
+
+<style>
+  
+ 
+
+</style>
+
+<div id="example">
+   
+    <template v-if="loginType === 'username'">
+      <label>Username</label>
+      <input placeholder="Enter your username">
+    </template>
+    <template v-else>
+      <label>Email</label>
+      <input placeholder="Enter your email address">
+    </template>
+    
+
+
+
+</div>
+
+<script type="text/javascript">
+    
+
+    var vm = new Vue({
+      el: '#example',
+      data: {
+        ok: false
+      }
+    })
+    
+</script>
+</body>
+</html>

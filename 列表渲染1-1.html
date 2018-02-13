@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>计算属性</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.1.3/vue.js"></script>
+</head>
+<body>
+
+<style>
+  
+ 
+
+</style>
+
+<div id="example">
+   
+   <ul>
+    <template v-for="item in items">
+      <li>{{ item.message }}</li>
+      <li class="divider">asasa</li>
+    </template>
+  </ul>
+
+</div>
+
+<script type="text/javascript">
+    
+
+    var vm = new Vue({
+      el: '#example',
+      data: {
+        items: [
+          {message: 'vuejs 是个很有意思的的东西'},
+          {message: 'vuejs 是个很有意思的的东西'},
+          {message: 'vuejs 是个很有意思的的东西'}
+        ]
+      }
+    })
+    
+</script>
+</body>
+</html>

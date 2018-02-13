@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>事件处理</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.1.3/vue.js"></script>
+</head>
+<body>
+
+<style>
+  
+ 
+
+</style>
+
+ 
+   
+<div id="example">
+  <!-- `greet` 是在下面定义的方法名 -->
+  <button  v-on:click.once="greet('这是传入的数据',$event)">Greet</button>
+</div>
+
+ 
+
+<script type="text/javascript">
+    
+
+    var example1 = new Vue({
+      el: '#example',
+      data: {
+        counter: 0
+      },
+      methods: {
+        greet: function(meg,event){
+          console.log(meg);
+          console.log(event)
+        }
+      }
+    })
+    
+</script>
+</body>
+</html>

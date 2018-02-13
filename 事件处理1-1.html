@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>事件处理</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.1.3/vue.js"></script>
+</head>
+<body>
+
+<style>
+  
+ 
+
+</style>
+
+ 
+   
+<div id="example">
+  <button v-on:click="counter += 1">Add 1</button>
+  <p>The button above has been clicked {{ counter }} times.</p>
+</div>
+
+ 
+
+<script type="text/javascript">
+    
+
+    var example1 = new Vue({
+      el: '#example',
+      data: {
+        counter: 0
+      }
+    })
+    
+</script>
+</body>
+</html>

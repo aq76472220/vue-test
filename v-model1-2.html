@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>model</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+
+<style>
+  
+ 
+
+</style>
+
+ 
+   
+<div id="example">
+
+ <select v-model="selected">
+    <!-- 内联对象字面量 -->
+  <option v-bind:value="{ number: 123 }">123</option>
+</select>
+
+</div>
+
+ 
+
+<script type="text/javascript">
+    
+
+    var vm = new Vue({
+      el: '#example',
+      data: {
+        selected: '11111'
+      }
+    })
+    
+</script>
+</body>
+</html>

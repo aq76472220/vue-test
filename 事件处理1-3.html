@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>事件处理</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+
+<style>
+  
+ 
+
+</style>
+
+ 
+   
+<div id="example">
+  <!-- `greet` 是在下面定义的方法名 -->
+  <button @click.middle="onClick">A</button>
+</div>
+
+ 
+
+<script type="text/javascript">
+    
+
+    var example1 = new Vue({
+      el: '#example',
+      data: {
+        counter: 0
+      },
+      methods: {
+        onClick: function(meg){
+          console.log(meg); 
+        }
+      }
+    })
+    
+</script>
+</body>
+</html>

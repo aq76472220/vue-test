@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>计算属性</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.1.3/vue.js"></script>
+</head>
+<body>
+
+<style>
+  
+ 
+
+</style>
+
+<div id="example">
+   
+    <ul>
+      <li v-for="n in evenNumbers">{{ n }}</li>
+    </ul>
+
+</div>
+
+<script type="text/javascript">
+    
+
+    var vm = new Vue({
+      el: '#example',
+     data: {
+        numbers: [ 1, 2, 3, 4, 5 ]
+      },
+      computed: {
+        evenNumbers: function () {
+          return this.numbers.filter(function (number) {
+            return number % 2 === 0
+          })
+        }
+      }
+    })
+    
+</script>
+</body>
+</html>
